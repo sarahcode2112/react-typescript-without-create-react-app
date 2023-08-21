@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "jsx": "react",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "lib": [
+        "dom",
+        "esnext"
+      ],
+      "strict": true,
+      "sourceMap": true,
+      "target": "esnext",
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
+
+
+// Explanatory comments for learning purposes:
+
+// "esModuleInterop": true, 
+// fix default and namespace imports from CommonJS to TS
+// "module": "esnext", // let webpack transpile es6 module imports and exports
+// "moduleResolution": "node", // resolve modules in Node
+// "lib": [
+// "dom",
+// "esnext"
+// ],
+// "strict": true, // use all Typescript type checks
+// "sourceMap": true, // generate source maps. These show the connection between between the original TypeScript code and the compiled JavaScript code. This allows developers to debug and to analyze code in the browser. (Otherwise when the final javascript is transpiled, it can be very different from the original typescript)
+// "target": "esnext", // TypeScript code will be transpiled to the latest ECMAScript version
